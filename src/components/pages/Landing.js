@@ -1,15 +1,17 @@
 function Landing() {
   return (
     <div>
-      <main>
+      <div className="landing-main">
         <header>
           <div className="main-title-contain">
             <div className="title-container">
               <h6>INCLUDED IN ALL PLANS</h6>
             </div>
+
             <div className="title-wrapper">
               <h2>All The Entertainment You Love</h2>
             </div>
+
             <div className="title-container">
               <h6>
                 Watch full seasons of <span>exclusively</span> streaming series,
@@ -19,14 +21,17 @@ function Landing() {
             </div>
           </div>
         </header>
+
         <div className="compact-display-container">
           <div className="icon-wrapper">
             {/* search for icons & add hover */}
           </div>
+
           <div className="partial-filter-wrapper">
             <div className="filter-dropdown">
               {/* CREATE A DROPDOWN WITH HOVER OVER CHANGING COLOR */}
             </div>
+
             <div className="content-card">
               <div className="title-container">
                 <h6>genera </h6>
@@ -34,17 +39,22 @@ function Landing() {
               </div>
               {/* we need to get a picutre of each genera and display it with the title & poster w/ a link routing it to the gallery page. */}
             </div>
+
             <div className="content-card"></div>
             <div className="content-card"></div>
             <div className="content-card"></div>
             <div className="content-card"></div>
             <div className="content-card"></div>
           </div>
+
           <div className="icon-wrapper">
             {/* search for icons & add hover */}
           </div>
-          <p>Premium network add-ons available for an additional cost</p>
+          <div className="sub-context-wrapper">
+            Premium network add-ons available for an additional cost
+          </div>
         </div>
+
         <div className="context-container">
           <div className="title-container">
             <h6>
@@ -52,9 +62,11 @@ function Landing() {
               ALL WITH HD
             </h6>
           </div>
+
           <div className="title-wrapper">
             <h2>Live TV Makes It Better</h2>
           </div>
+
           <div className="context-wrapper3">
             <h3>
               Make the switch from cable. Get 85+ top channels on Connect Plus +
@@ -65,6 +77,7 @@ function Landing() {
               Show-Hub and live sports with Sports On Demand.
             </h3>
           </div>
+
           <div className="sub-context-wrapper">
             <p>
               Regional restrictions, blackouts and Live TV terms apply. Access
@@ -73,27 +86,40 @@ function Landing() {
               for on-demand shows.
             </p>
           </div>
+
           <div className="context-wrapper4">
             <h5>VIEW CHANNELS IN YOUR AREA →</h5>
             {/* MAKE IT HAVE AN UNDERLINE*/}
           </div>
         </div>
+
         <div className="plan-selection">
           {/* ADD HR LINES IN BEWTEEN EACH SECTIONS */}
           <div className="main-title-contain">
             <div className="title-wrapper">
               <h2>Select Your Plan</h2>
             </div>
+
             <div className="context-wrapper3">
               <h3>
                 No hidden fees, equipment rentals, or installation appointments.
               </h3>
             </div>
+
             <div className="context-wrapper4">
               <h5>Switch plans or cancel anytime.**</h5>
             </div>
           </div>
-          <div className="buttons-section"></div>
+
+          <div className="buttons-section">
+            <div className="togg-wrapper">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
           <div className="table-content"></div>
           <div className="sub-context-wrapper">
             <p>
@@ -106,7 +132,7 @@ function Landing() {
             {/* UP ARROW ICON to take me back to the top & give it pulsing animation*/}
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

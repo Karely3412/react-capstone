@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import Landing from "./pages/Landing";
-import ShowPage from "./pages/ShowPage";
+import ShowRoom from "./pages/ShowRoom";
 import SideNav from "./navigation/SideNav";
 import Footer from "./navigation/Footer";
 
@@ -18,8 +18,10 @@ function App() {
           <Route exact path="/" component={About} />
           <Route path="/contact" component={Contact} />
           <Route exact path="/gallery" component={Gallery} />
-          <Route exact path="/landing" component={Landing} />
-          <Route exact path="/show" component={ShowPage} />
+          {/* <Route exact path="/landing" component={Landing} /> */}
+          <Landing></Landing>
+          <Route exact path="/showroom" component={ShowRoom} />
+          {/* Ask about showroom route */}
         </Switch>
         <Footer></Footer>
       </div>
