@@ -1,35 +1,97 @@
-// .landing-main {
-//   header {
-//     .main-title-contain {
-//       .title-container {
-//       }
+.landing-main {
+  header {
+    .main-title-container {
+      @include flexCenter;
+      .title-container {
+      }
 
-//       .title-wrapper {
-//       }
+      .title-wrapper {
+      }
 
-//       .title-container {
-//       }
-//     }
-//   }
+      .title-container {
+      }
+    }
+  }
 
-//   .compact-display-container {
-//     .icon-wrapper {
-//     }
+  // ****** SECTION DEVIVDERS ******
+  .compact-display-container {
+    .icon-wrapper {
+    }
 
-//     .partial-filter-wrapper {
-//       .filter-dropdown {
-//       }
+    .partial-filter-wrapper {
+      .filter-dropdown {
+      }
 
-//       .content-card {
-//         .title-container {
-//         }
-//       }
-//     }
+      .content-card {
+        .title-container {
+          p {
+            span {
+            }
+          }
+        }
+      }
+    }
 
-//     .icon-wrapper {
-//     }
+    .icon-wrapper {
+    }
 
-//     p {
-//     }
-//   }
-// }
+    .sub-context-wrapper {
+      p {
+      }
+    }
+  }
+
+  .context-container {
+    .title-container {
+      h6 {
+      }
+    }
+
+    .title-wrapper {
+      h2 {
+      }
+    }
+
+    .context-wrapper3 {
+      h3 {
+      }
+    }
+
+    .sub-context-wrapper {
+      p {
+      }
+    }
+
+    .context-wrapper4 {
+      h5 {
+      }
+    }
+  }
+
+  .plan-selection {
+    .main-title-contain {
+      .title-wrapper {
+        h2 {
+        }
+      }
+
+      .context-wrapper3 {
+        h3 {
+        }
+      }
+
+      .context-wrapper4 {
+        h5 {
+        }
+      }
+
+      .sub-context-wrapper {
+        p {
+        }
+      }
+
+      .icon-wrapper {
+      }
+    }
+  }
+}

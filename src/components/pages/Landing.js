@@ -3,7 +3,8 @@ function Landing() {
     <div>
       <div className="landing-main">
         <header>
-          <div className="main-title-contain">
+          {/* ****** SECTION DEVIVDERS ******  */}
+          <div className="main-title-container">
             <div className="title-container">
               <h6>INCLUDED IN ALL PLANS</h6>
             </div>
@@ -22,6 +23,7 @@ function Landing() {
           </div>
         </header>
 
+        {/* ****** SECTION DEVIVDERS ****** */}
         <div className="compact-display-container">
           <div className="icon-wrapper">
             {/* search for icons & add hover */}
@@ -34,7 +36,9 @@ function Landing() {
 
             <div className="content-card">
               <div className="title-container">
-                <h6>genera </h6>
+                <p>
+                  <span>genera</span>
+                </p>
                 {/* THIS SHOULD BE LAYING ON TOP OF POSTER/IMG */}
               </div>
               {/* we need to get a picutre of each genera and display it with the title & poster w/ a link routing it to the gallery page. */}
@@ -51,10 +55,11 @@ function Landing() {
             {/* search for icons & add hover */}
           </div>
           <div className="sub-context-wrapper">
-            Premium network add-ons available for an additional cost
+            <p>Premium network add-ons available for an additional cost</p>
           </div>
         </div>
 
+        {/* ****** Section main containers ****** */}
         <div className="context-container">
           <div className="title-container">
             <h6>
@@ -93,6 +98,7 @@ function Landing() {
           </div>
         </div>
 
+        {/* ****** SECTION DEVIVDERS ****** */}
         <div className="plan-selection">
           {/* ADD HR LINES IN BEWTEEN EACH SECTIONS */}
           <div className="main-title-contain">
@@ -111,16 +117,16 @@ function Landing() {
             </div>
           </div>
 
-          <div className="buttons-section">
+          {/* <div className="buttons-section">
             <div className="togg-wrapper">
               <label class="switch">
                 <input type="checkbox" />
                 <span class="slider round"></span>
               </label>
             </div>
-          </div>
+          </div> */}
 
-          <div className="table-content"></div>
+          {/* <div className="table-content"></div> */}
           <div className="sub-context-wrapper">
             <p>
               †For current-season shows in the streaming library only **Switches

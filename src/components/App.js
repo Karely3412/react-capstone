@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import "./styles/app.scss";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
@@ -15,13 +16,11 @@ function App() {
       <div>
         <SideNav></SideNav>
         <Switch>
-          <Route exact path="/" component={About} />
+          <Route exact path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route exact path="/gallery" component={Gallery} />
-          {/* <Route exact path="/landing" component={Landing} /> */}
-          <Landing></Landing>
+          <Route exact path="/" component={Landing} />
           <Route exact path="/showroom" component={ShowRoom} />
-          {/* Ask about showroom route */}
         </Switch>
         <Footer></Footer>
       </div>
