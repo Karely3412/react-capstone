@@ -1,6 +1,24 @@
-// body {
-// //   font-family: ;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-// h6{}
+body {
+  background-color: $off-black;
+  font-family: "Lato", sans-serif;
 
-// }
+  h2 {
+    color: $white;
+  }
+  h3 {
+    color: $white;
+  }
+  h5 {
+    color: $white;
+  }
+
+  h6 {
+    color: $orange;
+  }
+
+  p {
+    color: $grey;
+  }
+}

@@ -14,11 +14,11 @@ function Landing() {
             </div>
 
             <div className="title-container">
-              <h6>
-                Watch full seasons of <span>exclusively</span> streaming series,
-                current-season episodes, hit movies, Hulu Originals, kids shows,
-                & more.
-              </h6>
+              <h3>
+                Watch full seasons of exclusively streaming series,
+                current-season episodes, hit movies, Connect Plus Originals,
+                kids shows, & more.
+              </h3>
             </div>
           </div>
         </header>
@@ -36,9 +36,7 @@ function Landing() {
 
             <div className="content-card">
               <div className="title-container">
-                <p>
-                  <span>genera</span>
-                </p>
+                <p>genera</p>
                 {/* THIS SHOULD BE LAYING ON TOP OF POSTER/IMG */}
               </div>
               {/* we need to get a picutre of each genera and display it with the title & poster w/ a link routing it to the gallery page. */}
@@ -115,24 +113,115 @@ function Landing() {
             <div className="context-wrapper4">
               <h5>Switch plans or cancel anytime.**</h5>
             </div>
+
+            <div className="horiz-rule"></div>
           </div>
 
-          {/* <div className="buttons-section">
-            <div className="togg-wrapper">
-              <label class="switch">
-                <input type="checkbox" />
-                <span class="slider round"></span>
-              </label>
-            </div>
-          </div> */}
+          <div className="buttons-section">
+            <div className="content-column">
+              <div className="text">
+                <p>MOST POPULAR</p>
+              </div>
+              <div className="context-column">
+                <h3>30 DAY FREE TRIAL</h3>
+                <h5>CONNECT PLUS (With Ads)</h5>
+              </div>
 
-          {/* <div className="table-content"></div> */}
+              <button>$7.99 / MONTH</button>
+            </div>
+            <div className="content-column">
+              <h3>30 DAY FREE TRIAL</h3>
+              <h5>CONNECT PLUS ( NO Ads )</h5>
+              <button>$14.99 / MONTH</button>
+            </div>
+          </div>
+
+          <div className="table-content">
+            <thead>
+              <th>Monthly Price</th>
+              <th>$7.99/mo.</th>
+              <th>$14.99/mo.</th>
+            </thead>
+
+            <div className="horiz-rule"></div>
+
+            <tbody>
+              <tr>
+                <th>Streaming Library with tons of TV episodes and movies</th>
+                <td>icon</td>
+                <td>icon</td>
+              </tr>
+
+              <div className="horiz-rule"></div>
+
+              <tr>
+                <th>Most new episodes the day after they air†</th>
+                <td>icon</td>
+                <td>icon</td>
+              </tr>
+
+              <div className="horiz-rule"></div>
+
+              <tr>
+                <th>Access to award-winning Connect Plus Originals</th>
+                <td>icon</td>
+                <td>icon</td>
+              </tr>
+
+              <div className="horiz-rule"></div>
+
+              <tr>
+                <th>
+                  Watch on your favorite devices, including TV, laptop, phone,
+                  or tablet
+                </th>
+                <td>icon</td>
+                <td>icon</td>
+              </tr>
+
+              <div className="horiz-rule"></div>
+
+              <tr>
+                <th>Up to 6 user profilesUp to 6 user profiles</th>
+                <td>icon</td>
+                <td>icon</td>
+              </tr>
+
+              <div className="horiz-rule"></div>
+
+              <tr>
+                <th>Watch on 2 different screens at the same time</th>
+                <td>icon</td>
+                <td>icon</td>
+              </tr>
+
+              <div className="horiz-rule"></div>
+
+              <tr>
+                <th>No ads in streaming libraryNo ads in streaming library</th>
+                <td>icon</td>
+                <td>icon</td>
+              </tr>
+
+              <div className="horiz-rule"></div>
+
+              <tr>
+                <th>Download and watchDownload and watch</th>
+                <td>icon</td>
+                <td>icon</td>
+              </tr>
+              <div className="horiz-rule"></div>
+            </tbody>
+          </div>
           <div className="sub-context-wrapper">
             <p>
               †For current-season shows in the streaming library only **Switches
-              from Live TV to Hulu take effect as of the next billing cycle
+              from Live TV to Connect Plus take effect as of the next billing
+              cycle
             </p>
           </div>
+
+          <div className="horiz-rule"></div>
 
           <div className="icon-wrapper">
             {/* UP ARROW ICON to take me back to the top & give it pulsing animation*/}

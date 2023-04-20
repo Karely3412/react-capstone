@@ -1,6 +1,37 @@
-@mixin flexCenter {
+@mixin flexCenter($flex-direc, $just-cont, $align-items) {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: $flex-direc;
+  justify-content: $just-cont;
+  align-items: $align-items;
+}
+
+@mixin contentSize($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin borderTop($width, $style, $color) {
+  border-top: $width, $style, $color;
+}
+
+@mixin borderBottom($width, $style, $color) {
+  border-bottom: $width, $style, $color;
+}
+
+@mixin borderRadius($bord-rad) {
+  border-radius: $bord-rad;
+  border: none;
+}
+
+@mixin duoPadMar($padding, $margin) {
+  padding: $padding;
+  margin: $margin;
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+}
+
+@mixin textAlign($text-align) {
+  text-align: $text-align;
 }

@@ -1,14 +1,35 @@
 .landing-main {
+  @include duoPadMar(70px, 0);
   header {
     .main-title-container {
-      @include flexCenter;
+      @include flexCenter(column, center, center);
       .title-container {
+        h6 {
+          @include flexCenter(column, center, center);
+          @include fontSize(12px);
+          @include contentSize(13px, 156.15px);
+          @include duoPadMar(0, 0);
+        }
       }
 
       .title-wrapper {
+        h2 {
+          @include flexCenter(column, center, center);
+          @include fontSize(45px);
+          @include textAlign(center);
+          @include contentSize(60, 976px);
+          @include duoPadMar(0, 10px);
+        }
       }
 
       .title-container {
+        h3 {
+          @include flexCenter(column, center, center);
+          @include fontSize(16px);
+          @include textAlign(center);
+          @include contentSize(59px, 759px);
+          @include duoPadMar(0, 0);
+        }
       }
     }
   }
@@ -25,8 +46,6 @@
       .content-card {
         .title-container {
           p {
-            span {
-            }
           }
         }
       }
@@ -37,61 +56,201 @@
 
     .sub-context-wrapper {
       p {
+        @include flexCenter(column, center, center);
+        @include fontSize(10px);
+        @include textAlign(center);
+        @include contentSize(25px, 692px);
+        @include duoPadMar(0, 0);
       }
     }
   }
 
   .context-container {
+    @include flexCenter(column, center, center);
+
     .title-container {
       h6 {
+        @include flexCenter(column, center, center);
+        @include fontSize(14px);
+        @include contentSize(134px, 976px);
+        @include duoPadMar(0, 0);
+        letter-spacing: 0.6px;
       }
     }
 
     .title-wrapper {
       h2 {
+        @include fontSize(30px);
       }
     }
 
     .context-wrapper3 {
       h3 {
+        @include flexCenter(column, center, center);
+        @include fontSize(16px);
+        @include textAlign(center);
+        @include contentSize(134px, 976px);
+        @include duoPadMar(0, 0);
       }
     }
 
     .sub-context-wrapper {
       p {
+        @include flexCenter(column, center, center);
+        @include fontSize(10px);
+        @include textAlign(center);
+        @include contentSize(25px, 692px);
+        @include duoPadMar(0, 0);
       }
     }
 
     .context-wrapper4 {
       h5 {
+        @include flexCenter(column, center, center);
+        @include fontSize(16px);
+        @include contentSize(134px, 976px);
+        @include duoPadMar(0, 0);
       }
     }
   }
 
   .plan-selection {
+    @include flexCenter(column, center, center);
     .main-title-contain {
+      @include flexCenter(column, center, center);
+
       .title-wrapper {
         h2 {
+          @include flexCenter(column, center, center);
+          @include fontSize(40px);
+          @include contentSize(60px, 976px);
+          @include duoPadMar(0, 0);
         }
       }
 
       .context-wrapper3 {
         h3 {
+          @include flexCenter(column, center, center);
+          @include fontSize(16px);
+          @include contentSize(65px, 976px);
+          @include duoPadMar(0, 0);
         }
       }
 
       .context-wrapper4 {
+        border-bottom: 1px solid $light-grey;
         h5 {
+          @include flexCenter(row, center, center);
+          @include fontSize(16px);
+          @include contentSize(25px, 976px);
         }
       }
+    }
 
-      .sub-context-wrapper {
-        p {
+    .buttons-section {
+      @include flexCenter(row, space-evenly, center);
+      @include contentSize(275px, 976px);
+      @include duoPadMar(0, 20px);
+      letter-spacing: 0.6px;
+
+      .logo-wrap {
+      }
+
+      .content-column {
+        @include flexCenter(column, center, center);
+        .text {
+          @include flexCenter(column, center, center);
+          @include duoPadMar(0, 10px);
+
+          p {
+            color: $white;
+            @include fontSize(10px);
+            @include flexCenter(none, center, center);
+          }
+          @include borderRadius(24px);
+          @include contentSize(30px, 136px);
+          background-color: $orange;
+        }
+        button {
+          @include contentSize(48px, 268px);
+          @include borderRadius(6px);
+        }
+
+        .context-colum {
+          h3 {
+            @include contentSize(48px, 268px);
+          }
+
+          h5 {
+            @include contentSize(48px, 268px);
+          }
         }
       }
+    }
 
-      .icon-wrapper {
+    .table-content {
+      thead {
+        color: $white;
+        @include flexCenter(row, space-between, center);
+        @include fontSize(16px);
+        @include contentSize(60px, 976px);
+        @include duoPadMar(0, 0);
+
+        th:first-child {
+          color: $white;
+          @include flexCenter(row, space-between, center);
+          @include fontSize(16px);
+          @include contentSize(60px, 406px);
+          @include duoPadMar(0, 0);
+        }
+
+        th {
+          color: $white;
+          @include flexCenter(row, center, center);
+          @include fontSize(16px);
+          @include contentSize(60px, 284px);
+          @include duoPadMar(0, 0);
+        }
       }
+      tbody {
+        tr {
+          @include flexCenter(row, center, center);
+          @include fontSize(16px);
+          @include contentSize(60px, 976px);
+          @include duoPadMar(0, 0);
+          th {
+            color: $white;
+            @include flexCenter(row, space-between, center);
+            @include fontSize(14px);
+            @include contentSize(60px, 417px);
+            @include duoPadMar(0, 0);
+          }
+          td {
+            color: $white;
+            @include flexCenter(column, center, center);
+            @include fontSize(14px);
+            @include contentSize(60px, 279px);
+            @include duoPadMar(0, 0);
+          }
+        }
+      }
+    }
+
+    .sub-context-wrapper {
+      p {
+        @include flexCenter(column, center, center);
+        @include fontSize(10px);
+        @include textAlign(end);
+        @include contentSize(25px, 692px);
+        @include duoPadMar(0, 5px);
+      }
+    }
+
+    .horiz-rule {
+      border-top: 1px solid $light-grey;
+    }
+
+    .icon-wrapper {
     }
   }
 }
