@@ -1,6 +1,7 @@
-.landing-main {
+.main {
   @include duoPadMar(70px, 0);
   header {
+    @include duoPadMar(0, 35px);
     .main-title-container {
       @include flexCenter(column, center, center);
       .title-container {
@@ -36,22 +37,31 @@
 
   // ****** SECTION DEVIVDERS ******
   .compact-display-container {
-    .icon-wrapper {
-    }
+    @include flexCenter(column, center, center);
+    @include contentSize(400px, 88rem);
 
-    .partial-filter-wrapper {
-      .filter-dropdown {
-      }
+    .content-card-wrapper {
+      @include flexCenter(row, center, center);
+      @include contentSize(400px, 235px);
+      @include duoPadMar(0, 0);
 
       .content-card {
+        @include flexCenter(column, center, center);
+        @include contentSize(295px, 235px);
+        @include duoPadMar(0, 13px);
+
         .title-container {
+          @include flexCenter(row, left, center);
+          @include textAlign(center);
+          @include contentSize(295px, 210px);
           p {
+          }
+
+          img {
+            @include contentSize(451px, 295px);
           }
         }
       }
-    }
-
-    .icon-wrapper {
     }
 
     .sub-context-wrapper {
@@ -114,10 +124,28 @@
     }
   }
 
+  .background-img {
+    background-image: url("../../images/movie-collage.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    @include flexCenter(row, center, center);
+    @include contentSize(40rem, 91rem);
+    @include duoPadMar(0, 0);
+
+    img {
+      @include flexCenter(column, center, center);
+      @include contentSize(40rem, 89rem);
+      @include duoPadMar(0, 0);
+    }
+  }
+
   .plan-selection {
     @include flexCenter(column, center, center);
+    @include duoPadMar(80px, 0);
+
     .main-title-contain {
       @include flexCenter(column, center, center);
+      @include duoPadMar(0, 40px);
 
       .title-wrapper {
         h2 {

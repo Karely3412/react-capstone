@@ -1,7 +1,9 @@
+// import movieCollage from "../images/movie-collage.jpeg";
+
 function Landing() {
   return (
     <div>
-      <div className="landing-main">
+      <div className="main">
         <header>
           {/* ****** SECTION DEVIVDERS ******  */}
           <div className="main-title-container">
@@ -25,33 +27,64 @@ function Landing() {
 
         {/* ****** SECTION DEVIVDERS ****** */}
         <div className="compact-display-container">
-          <div className="icon-wrapper">
-            {/* search for icons & add hover */}
-          </div>
-
-          <div className="partial-filter-wrapper">
-            <div className="filter-dropdown">
-              {/* CREATE A DROPDOWN WITH HOVER OVER CHANGING COLOR */}
-            </div>
-
+          <div className="content-card-wrapper">
             <div className="content-card">
               <div className="title-container">
                 <p>genera</p>
                 {/* THIS SHOULD BE LAYING ON TOP OF POSTER/IMG */}
               </div>
-              {/* we need to get a picutre of each genera and display it with the title & poster w/ a link routing it to the gallery page. */}
+
+              <img
+                src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                alt="movie poster"
+              />
             </div>
+            <div className="content-card">
+              <div className="title-container">
+                <p>genera</p>
+                {/* THIS SHOULD BE LAYING ON TOP OF POSTER/IMG */}
+              </div>
 
-            <div className="content-card"></div>
-            <div className="content-card"></div>
-            <div className="content-card"></div>
-            <div className="content-card"></div>
-            <div className="content-card"></div>
+              <img
+                src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                alt="movie poster"
+              />
+            </div>
+            <div className="content-card">
+              <div className="title-container">
+                <p>genera</p>
+                {/* THIS SHOULD BE LAYING ON TOP OF POSTER/IMG */}
+              </div>
+
+              <img
+                src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                alt="movie poster"
+              />
+            </div>
+            <div className="content-card">
+              <div className="title-container">
+                <p>genera</p>
+                {/* THIS SHOULD BE LAYING ON TOP OF POSTER/IMG */}
+              </div>
+
+              <img
+                src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                alt="movie poster"
+              />
+            </div>
+            <div className="content-card">
+              <div className="title-container">
+                <p>genera</p>
+                {/* THIS SHOULD BE LAYING ON TOP OF POSTER/IMG */}
+              </div>
+
+              <img
+                src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                alt="movie poster"
+              />
+            </div>
           </div>
 
-          <div className="icon-wrapper">
-            {/* search for icons & add hover */}
-          </div>
           <div className="sub-context-wrapper">
             <p>Premium network add-ons available for an additional cost</p>
           </div>
@@ -94,6 +127,10 @@ function Landing() {
             <h5>VIEW CHANNELS IN YOUR AREA →</h5>
             {/* MAKE IT HAVE AN UNDERLINE*/}
           </div>
+        </div>
+
+        <div className="background-img">
+          {/* <img src={movieCollage}></img> */}
         </div>
 
         {/* ****** SECTION DEVIVDERS ****** */}
