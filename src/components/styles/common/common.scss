@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
+// html {
+//   @include flexCenter(row, center, center);
+// }
+
 body {
   background-color: $black;
   font-family: "Lato", sans-serif;

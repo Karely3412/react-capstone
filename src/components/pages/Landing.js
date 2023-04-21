@@ -1,9 +1,14 @@
-// import movieCollage from "../images/movie-collage.jpeg";
+import { HashLink as Link } from "react-router-hash-link";
+
+import { FiCheck } from "react-icons/fi";
+import { FiMinus } from "react-icons/fi";
+import { FiChevronsUp } from "react-icons/fi";
+import { FiCast, FiWifi, FiTv } from "react-icons/fi";
 
 function Landing() {
   return (
     <div>
-      <div className="main">
+      <div id="backup" className="main">
         <header>
           {/* ****** SECTION DEVIVDERS ******  */}
           <div className="main-title-container">
@@ -30,7 +35,7 @@ function Landing() {
           <div className="content-card-wrapper">
             <div className="content-card">
               <div className="title-container">
-                <p>genera</p>
+                <p>Action</p>
                 {/* THIS SHOULD BE LAYING ON TOP OF POSTER/IMG */}
               </div>
 
@@ -41,7 +46,7 @@ function Landing() {
             </div>
             <div className="content-card">
               <div className="title-container">
-                <p>genera</p>
+                <p>Horror</p>
                 {/* THIS SHOULD BE LAYING ON TOP OF POSTER/IMG */}
               </div>
 
@@ -52,7 +57,7 @@ function Landing() {
             </div>
             <div className="content-card">
               <div className="title-container">
-                <p>genera</p>
+                <p>Thrillers</p>
                 {/* THIS SHOULD BE LAYING ON TOP OF POSTER/IMG */}
               </div>
 
@@ -63,7 +68,7 @@ function Landing() {
             </div>
             <div className="content-card">
               <div className="title-container">
-                <p>genera</p>
+                <p>Romance</p>
                 {/* THIS SHOULD BE LAYING ON TOP OF POSTER/IMG */}
               </div>
 
@@ -74,7 +79,7 @@ function Landing() {
             </div>
             <div className="content-card">
               <div className="title-container">
-                <p>genera</p>
+                <p>Mistery</p>
                 {/* THIS SHOULD BE LAYING ON TOP OF POSTER/IMG */}
               </div>
 
@@ -87,6 +92,18 @@ function Landing() {
 
           <div className="sub-context-wrapper">
             <p>Premium network add-ons available for an additional cost</p>
+          </div>
+        </div>
+
+        <div className="icon-wrap">
+          <div className="mid-icon">
+            <FiWifi className="i" />
+          </div>
+          <div className="mid-icon">
+            <FiTv className="i" />
+          </div>
+          <div className="mid-icon">
+            <FiCast className="i" />
           </div>
         </div>
 
@@ -129,9 +146,7 @@ function Landing() {
           </div>
         </div>
 
-        <div className="background-img">
-          {/* <img src={movieCollage}></img> */}
-        </div>
+        <div className="background-img"></div>
 
         {/* ****** SECTION DEVIVDERS ****** */}
         <div className="plan-selection">
@@ -185,24 +200,36 @@ function Landing() {
             <tbody>
               <tr>
                 <th>Streaming Library with tons of TV episodes and movies</th>
-                <td>icon</td>
-                <td>icon</td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
               </tr>
 
               <div className="horiz-rule"></div>
 
               <tr>
                 <th>Most new episodes the day after they air†</th>
-                <td>icon</td>
-                <td>icon</td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
               </tr>
 
               <div className="horiz-rule"></div>
 
               <tr>
                 <th>Access to award-winning Connect Plus Originals</th>
-                <td>icon</td>
-                <td>icon</td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
               </tr>
 
               <div className="horiz-rule"></div>
@@ -212,40 +239,60 @@ function Landing() {
                   Watch on your favorite devices, including TV, laptop, phone,
                   or tablet
                 </th>
-                <td>icon</td>
-                <td>icon</td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
               </tr>
 
               <div className="horiz-rule"></div>
 
               <tr>
                 <th>Up to 6 user profilesUp to 6 user profiles</th>
-                <td>icon</td>
-                <td>icon</td>
+                <td>
+                  <FiMinus className="minus" />
+                </td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
               </tr>
 
               <div className="horiz-rule"></div>
 
               <tr>
                 <th>Watch on 2 different screens at the same time</th>
-                <td>icon</td>
-                <td>icon</td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
               </tr>
 
               <div className="horiz-rule"></div>
 
               <tr>
                 <th>No ads in streaming libraryNo ads in streaming library</th>
-                <td>icon</td>
-                <td>icon</td>
+                <td>
+                  <FiMinus className="minus" />
+                </td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
               </tr>
 
               <div className="horiz-rule"></div>
 
               <tr>
                 <th>Download and watchDownload and watch</th>
-                <td>icon</td>
-                <td>icon</td>
+                <td>
+                  <FiMinus className="minus" />
+                </td>
+                <td>
+                  <FiCheck className="check" />
+                </td>
               </tr>
               <div className="horiz-rule"></div>
             </tbody>
@@ -261,7 +308,9 @@ function Landing() {
           <div className="horiz-rule"></div>
 
           <div className="icon-wrapper">
-            {/* UP ARROW ICON to take me back to the top & give it pulsing animation*/}
+            <Link to="/#backup">
+              <FiChevronsUp className="check" />
+            </Link>
           </div>
         </div>
       </div>

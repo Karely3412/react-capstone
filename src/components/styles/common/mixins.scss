@@ -18,6 +18,10 @@
   border-bottom: $width, $style, $color;
 }
 
+@mixin border($width, $style, $color) {
+  border: $width, $style, $color;
+}
+
 @mixin borderRadius($bord-rad) {
   border-radius: $bord-rad;
   border: none;

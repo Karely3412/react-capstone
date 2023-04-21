@@ -1,0 +1,59 @@
+.side-nav-main {
+  @include contentSize(100%, 100%);
+  @include flexCenter(column, space-evenly, center);
+
+  .content-container {
+    @include flexCenter(row, space-between, center);
+    @include contentSize(100%, 80%);
+
+    .context-wrap {
+      @include flexCenter(row, space-evenly, center);
+      @include contentSize(30px, 15rem);
+
+      p {
+        @include fontSize(31px);
+        color: $orange;
+      }
+      .logo {
+        @include flexCenter(row, space-evenly, center);
+        @include fontSize(31px);
+        color: $orange;
+      }
+    }
+
+    ul {
+      @include flexCenter(row, space-between, center);
+
+      li {
+        @include contentSize(27px, 4rem);
+        .home {
+          @include fontSize(28px);
+          color: $orange;
+        }
+      }
+      li {
+        .gallery {
+          @include fontSize(28px);
+          color: $orange;
+        }
+      }
+      li {
+        .about {
+          @include fontSize(28px);
+          color: $orange;
+        }
+      }
+      li {
+        .contact {
+          @include fontSize(28px);
+          color: $orange;
+        }
+      }
+    }
+  }
+  .horiz-rule {
+    @include contentSize(0, 95%);
+    @include duoPadMar(0, 20px);
+    border-top: 1px solid $light-grey;
+  }
+}

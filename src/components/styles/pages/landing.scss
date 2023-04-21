@@ -1,7 +1,7 @@
 .main {
   @include duoPadMar(70px, 0);
   header {
-    @include duoPadMar(0, 35px);
+    @include duoPadMar(0, 65px);
     .main-title-container {
       @include flexCenter(column, center, center);
       .title-container {
@@ -75,6 +75,21 @@
     }
   }
 
+  .icon-wrap {
+    @include flexCenter(row, center, center);
+    @include fontSize(8rem);
+    @include contentSize(350px, 89rem);
+    @include duoPadMar(0, 0);
+
+    .mid-icon {
+      @include flexCenter(row, center, center);
+      @include contentSize(400px, 25rem);
+      .i {
+        color: $light-grey;
+      }
+    }
+  }
+
   .context-container {
     @include flexCenter(column, center, center);
 
@@ -84,6 +99,7 @@
         @include fontSize(14px);
         @include contentSize(134px, 976px);
         @include duoPadMar(0, 0);
+        @include textAlign(center);
         letter-spacing: 0.6px;
       }
     }
@@ -192,8 +208,8 @@
 
           p {
             color: $white;
-            @include fontSize(10px);
             @include flexCenter(none, center, center);
+            @include fontSize(10px);
           }
           @include borderRadius(24px);
           @include contentSize(30px, 136px);
@@ -259,6 +275,15 @@
             @include fontSize(14px);
             @include contentSize(60px, 279px);
             @include duoPadMar(0, 0);
+
+            .check {
+              color: $orange;
+              @include fontSize(25px);
+            }
+
+            .minus {
+              @include fontSize(15px);
+            }
           }
         }
       }
@@ -279,6 +304,11 @@
     }
 
     .icon-wrapper {
+      @include fontSize(40px);
+      @include duoPadMar(0, 80px);
+      .check {
+        color: $orange;
+      }
     }
   }
 }

@@ -1,8 +1,2 @@
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-
-function initIcons() {
-  return library.add(faEnvelope, faPhone);
-}
-
-export default initIcons;
+// import { FiCheck } from "react-icons/fi";
+// import { FiMinus } from "react-icons/fi";
