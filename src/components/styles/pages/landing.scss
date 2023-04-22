@@ -54,8 +54,6 @@
           @include flexCenter(row, left, center);
           @include textAlign(center);
           @include contentSize(295px, 210px);
-          p {
-          }
 
           img {
             @include contentSize(451px, 295px);
@@ -196,9 +194,6 @@
       @include contentSize(275px, 976px);
       @include duoPadMar(0, 20px);
       letter-spacing: 0.6px;
-
-      .logo-wrap {
-      }
 
       .content-column {
         @include flexCenter(column, center, center);

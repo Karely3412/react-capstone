@@ -1,0 +1,12 @@
+.main-gallery {
+  .content-card-wrapper {
+    @include flexCenter(row, center, center);
+    @include contentSize(400px, 235px);
+    @include duoPadMar(0, 0);
+    flex-wrap: wrap;
+    .content-card {
+      .title-container {
+      }
+    }
+  }
+}

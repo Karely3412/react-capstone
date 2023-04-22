@@ -13,9 +13,10 @@ import Footer from "./navigation/Footer";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <SideNav></SideNav>
+    <div className="App">
+      <Router>
+        <SideNav />
+        {/* <SideNav></SideNav> */}
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route exact path="/gallery" component={Gallery} />
@@ -23,9 +24,9 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>
-        <Footer></Footer>
-      </div>
-    </Router>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

@@ -1,0 +1,41 @@
+.main-footer {
+  @include flexCenter(column, center, center);
+  @include contentSize(400px, 88rem);
+  // .content-card-wrapper {
+  //   @include flexCenter(row, center, center);
+  //   @include contentSize(400px, 235px);
+  //   @include duoPadMar(0, 0);
+
+  //   .content-card {
+  //     @include flexCenter(column, center, center);
+  //     @include contentSize(295px, 235px);
+  //     @include duoPadMar(0, 4px);
+
+  //     img {
+  //       @include contentSize(451px, 200px);
+  //     }
+
+  //   }
+  // }
+  .content-card-wrapper {
+    @include flexCenter(row, center, center);
+    @include contentSize(400px, 235px);
+    @include duoPadMar(0, 0);
+
+    .content-card {
+      @include flexCenter(column, center, center);
+      @include contentSize(295px, 235px);
+      @include duoPadMar(0, 13px);
+
+      .title-container {
+        @include flexCenter(row, left, center);
+        @include textAlign(center);
+        @include contentSize(295px, 210px);
+
+        img {
+          @include contentSize(451px, 295px);
+        }
+      }
+    }
+  }
+}
