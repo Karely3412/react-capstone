@@ -13,9 +13,10 @@ function Gallery() {
       .then(
         (res) => {
           setshowData(res.data);
-          console.log(setshowData);
+          // console.log(setshowData);
         }
         // setshowGenres([...new Set(returnData.map((showInfo) => showInfo.id))]);
+        // console.log(setshowData);
       )
       .catch((err) => console.log(err));
   }, []);
@@ -42,12 +43,18 @@ function Gallery() {
           return (
             <div key={index} className="content-card">
               <div className="title-container">
-                <p>{values.name}</p>
+                <h3>{values.name}</h3>
               </div>
               <img src={values.image.medium} alt="movie poster" />
               <div className="content-container">
-                <p>{values.body}</p>
+                <div className="content-wrap">
+                  <p>Rated Stars: {values.rating.average}</p>
+                </div>
+                <div className="content-wrap">
+                  <p>Runtime: {values.runtime} min.</p>
+                </div>
               </div>
+              <div className="horiz-rule"></div>
             </div>
           );
         })}

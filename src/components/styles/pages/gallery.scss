@@ -1,12 +1,40 @@
 .main-gallery {
+  @include flexCenter(row, center, center);
+
   .content-card-wrapper {
     @include flexCenter(row, center, center);
-    @include contentSize(400px, 235px);
-    @include duoPadMar(0, 0);
     flex-wrap: wrap;
+
     .content-card {
+      @include contentSize(550px, 220px);
+
       .title-container {
+        @include flexCenter(row, center, center);
+        @include contentSize(100px, 220px);
+
+        h3 {
+          text-align: center;
+        }
       }
+
+      .content-container {
+        @include flexCenter(column, flex-start, center);
+        @include contentSize(150px, 220px);
+
+        .content-wrap {
+          @include flexCenter(row, center, flex-start);
+          @include contentSize(25px, 220px);
+
+          .p {
+            @include contentSize(19.5px, 220px);
+            @include duoPadMar(0, 4px);
+          }
+        }
+      }
+    }
+
+    .horiz-rule {
+      border-top: 1px solid $light-grey;
     }
   }
 }
