@@ -1,10 +1,12 @@
 .side-nav-main {
   @include contentSize(100%, 100%);
   @include flexCenter(column, space-evenly, center);
+  flex-wrap: wrap;
 
   .content-container {
     @include flexCenter(row, space-between, center);
     @include contentSize(100%, 80%);
+    flex-wrap: wrap;
 
     .context-wrap {
       @include flexCenter(row, space-evenly, center);

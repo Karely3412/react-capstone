@@ -18,7 +18,7 @@
           @include flexCenter(column, center, center);
           @include fontSize(45px);
           @include textAlign(center);
-          @include contentSize(60, 976px);
+          @include contentSize(60px, 976px);
           @include duoPadMar(0, 10px);
         }
       }

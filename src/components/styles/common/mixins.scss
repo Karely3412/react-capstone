@@ -3,6 +3,7 @@
   flex-direction: $flex-direc;
   justify-content: $just-cont;
   align-items: $align-items;
+  // flex-wrap: wrap;
 }
 
 @mixin contentSize($height, $width) {

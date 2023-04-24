@@ -1,0 +1,55 @@
+.dropdwn {
+  @include flexCenter(column, center, center);
+  @include contentSize(72px, 100%);
+  @include fontSize(20px);
+  @include duoPadMar(0, 0);
+  @include textAlign(center);
+
+  .dropdwn-btn {
+    @include flexCenter(row, center, center);
+    @include contentSize(24, 155px);
+    @include duoPadMar(0, 8px);
+    @include textAlign(center);
+    border-top: 1px solid $light-grey;
+
+    a {
+      @include flexCenter(row, center, center);
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .dropdown-arrow {
+    }
+
+    p {
+      @include duoPadMar(0, 0);
+      @include contentSize(24, 155px);
+    }
+  }
+
+  .dropdwn-choices {
+    @include flexCenter(column, center, center);
+    @include textAlign(center);
+    @include contentSize(48px, 155px);
+    @include duoPadMar(0, 0);
+    border-top: 1px solid $light-grey;
+    border-left: 1px solid $light-grey;
+    border-right: 1px solid $light-grey;
+    border-radius: 4px;
+
+    .choice {
+      @include flexCenter(column, center, center);
+      @include textAlign(center);
+      @include contentSize(24px, 155px);
+      cursor: pointer;
+      transition: all 0.2s;
+
+      p {
+        @include duoPadMar(0, 0);
+        @include contentSize(24px, 155px);
+        @include duoPadMar(0, 0);
+        border-bottom: 1px solid $light-grey;
+      }
+    }
+  }
+}

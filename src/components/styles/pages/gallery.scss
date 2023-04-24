@@ -1,6 +1,10 @@
 .main-gallery {
   @include flexCenter(row, center, center);
 
+  .filter-container {
+    width: 400px;
+  }
+
   .content-card-wrapper {
     @include flexCenter(row, center, center);
     flex-wrap: wrap;

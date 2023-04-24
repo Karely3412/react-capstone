@@ -10,19 +10,20 @@ import Landing from "./pages/Landing";
 import ShowRoom from "./pages/ShowRoom";
 import SideNav from "./navigation/SideNav";
 import Footer from "./navigation/Footer";
+import Dropdwn from "./pages/Dropdwn";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <SideNav />
-        {/* <SideNav></SideNav> */}
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route exact path="/gallery" component={Gallery} />
           <Route path="/showroom" component={ShowRoom} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/dropdwn" component={Dropdwn} />
         </Switch>
         <Footer />
       </Router>
