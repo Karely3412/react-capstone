@@ -1,15 +1,24 @@
 .main-gallery {
-  @include flexCenter(row, center, center);
+  @include flexCenter(column, center, center);
 
   .filter-container {
-    width: 400px;
+    @include flexCenter(row, flex-end, center);
+    @include contentSize(28px, 80%);
+
+    select {
+      @include contentSize(28px, 110px);
+      @include fontSize(18px);
+      background-color: $light-grey;
+      color: $orange;
+      border-radius: 4px;
+    }
   }
 
   .content-card-wrapper {
     @include flexCenter(row, center, center);
     flex-wrap: wrap;
-
     .content-card {
+      @include flexCenter(column, center, center);
       @include contentSize(550px, 220px);
 
       .title-container {
@@ -20,6 +29,10 @@
           text-align: center;
         }
       }
+
+      // .img-wrap {
+      //   @include contentSize(295px, 210px);
+      // }
 
       .content-container {
         @include flexCenter(column, flex-start, center);
@@ -35,10 +48,9 @@
           }
         }
       }
-    }
-
-    .horiz-rule {
-      border-top: 1px solid $light-grey;
+      .horiz-rule {
+        border-top: 1px solid hsla(0, 0%, 78.4%, 0.4);
+      }
     }
   }
 }

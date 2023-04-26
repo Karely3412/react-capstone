@@ -1,45 +1,35 @@
 // import React from "react";
 // import { useState } from "react";
-// import { Link } from "react-router-dom";
-// import { AiOutlineDown } from "react-icons/ai";
 
 // function Dropdwn() {
-// const [onToggle, setToggle] = useState(false);
+//   // const [toggleFilter, setToggleFilter] = useState(false);
+//   const [toggleGenres, setToggleGenres] = useState(false);
+//   const [toggleRatings, setToggleRatings] = useState(false);
 
-// useEffect(() => {
-//   setToggle(!onToggle);
-// }, []);
+//   return (
+//     <div className="main-gallery">
+//       <div className="filter-container">
+//         <select>
+//           <option> Search by</option>
+//         </select>
 
-// return (
-// <div>
-//   <form>
-//     <select></select>
-//   </form>
-// </div>
-// <div className="dropdwn">
-//   <div
-//     className="dropdwn-btn"
-//     onClick={(e) => {
-//       setToggle(!onToggle);
-//     }}
-//   >
-//     <p>Filter Shows</p>
-//     <AiOutlineDown />
-//   </div>
-//   {onToggle && (
-//     <div className="dropdwn-choices">
-//       <div className="choice">
-//         <p>Genres</p>
-//         {/* {values.genres} */}
+//         <select>
+//           <option> Filter by </option>
+//           <option onClick={() => setToggleGenres(!toggleGenres)}>
+//             High to Low
+//           </option>
+
+//           <option onClick={() => setToggleRatings(!toggleRatings)}>
+//             Low to High
+//           </option>
+//         </select>
 //       </div>
-//       <div className="choice">
-//         <p>Network</p>
-//         {/* {values.network} */}
+
+//       <div className="genres-title">
+//         <h1>Horror</h1>
 //       </div>
 //     </div>
-//   )}
-// </div>
-// );
+//   );
 // }
 
 // export default Dropdwn;
