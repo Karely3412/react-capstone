@@ -10,7 +10,7 @@ import Landing from "./pages/Landing";
 import ShowRoom from "./pages/ShowRoom";
 import SideNav from "./navigation/SideNav";
 import Footer from "./navigation/Footer";
-import Dropdwn from "./pages/Dropdwn";
+// import Dropdwn from "./pages/Dropdwn";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="/showroom" component={ShowRoom} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
-          <Route path="/dropdwn" component={Dropdwn} />
+          {/* <Route path="/dropdwn" component={Dropdwn} /> */}
         </Switch>
         <Footer />
       </Router>

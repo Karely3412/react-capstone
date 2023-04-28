@@ -35,16 +35,41 @@
       // }
 
       .content-container {
-        @include flexCenter(column, flex-start, center);
+        @include flexCenter(column, center, center);
         @include contentSize(150px, 220px);
 
         .content-wrap {
-          @include flexCenter(row, center, flex-start);
+          @include flexCenter(column, center, center);
           @include contentSize(25px, 220px);
+          @include duoPadMar(0, 0);
 
           .p {
-            @include contentSize(19.5px, 220px);
-            @include duoPadMar(0, 4px);
+            @include flexCenter(column, center, center);
+            @include contentSize(25px, 220px);
+            @include duoPadMar(0, 0);
+          }
+        }
+
+        .content-wrap2 {
+          @include flexCenter(row, center, center);
+          @include contentSize(38px, 220px);
+
+          .p {
+            @include contentSize(38px, 220px);
+            @include duoPadMar(0, 0);
+          }
+        }
+
+        .content-wrap3 {
+          @include flexCenter(column, center, center);
+          @include contentSize(70px, 220px);
+          @include duoPadMar(0, 0);
+          @include textAlign(center);
+
+          .p {
+            @include flexCenter(row, center, center);
+            @include contentSize(70px, 220px);
+            @include duoPadMar(0, 0);
           }
         }
       }
