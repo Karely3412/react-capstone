@@ -6,8 +6,6 @@ function Gallery() {
   const [filterSelectGenre, setfilterSelectGenre] = useState("");
   const [filterByGenres, setfilterByGenres] = useState([]);
   const [filterSelectRating, setfilterSelectRating] = useState("");
-  //one more const with state of the selection of rating sorting
-  //could be none, could be h-l or L-H
 
   useEffect(() => {
     axios
@@ -29,6 +27,7 @@ function Gallery() {
 
     if (filterSelectGenre === "") {
       aResults = [...showData];
+      console.log(aResults);
     } else if (filterSelectGenre !== "") {
       aResults = showData.filter((data) =>
         data.genres.includes(filterSelectGenre)
@@ -41,36 +40,8 @@ function Gallery() {
       aResults.sort((a, b) => a.rating.average - b.rating.average);
     }
 
-    //you have what you need in aResults
-    //if the select option for sorting is selected, then sort, else NOTHING!!!!!!!!!!!!!!!!!!!!!
-    //you are not going to create a new array, you are going to sort aResults!!!!!!!!!!!
-
     return aResults;
   }
-
-  // function compareValues(key, order = 'asc') {
-  //   return function innerSort(a, b) {
-  //     if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
-  //       // property doesn't exist on either object
-  //       return 0;
-  //     }
-
-  //     const varA = (typeof a[key] === 'string')
-  //       ? a[key].toUpperCase() : a[key];
-  //     const varB = (typeof b[key] === 'string')
-  //       ? b[key].toUpperCase() : b[key];
-
-  //     let comparison = 0;
-  //     if (varA > varB) {
-  //       comparison = 1;
-  //     } else if (varA < varB) {
-  //       comparison = -1;
-  //     }
-  //     return (
-  //       (order === 'desc') ? (comparison * -1) : comparison
-  //     );
-  //   };
-  // }
 
   function changeFilterGenre(event) {
     setfilterSelectGenre(event.target.value);

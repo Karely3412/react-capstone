@@ -1,0 +1,81 @@
+.main-showpage {
+  @include flexCenter(column, center, center);
+  @include duoPadMar(0, 0);
+
+  .content-container {
+    @include flexCenter(row, space-between, center);
+    @include contentSize(738.28px, 738.28px);
+    @include duoPadMar(0, 80px);
+
+    .context-container {
+      @include flexCenter(column, flex-start, center);
+      @include duoPadMar(0, 0);
+      @include contentSize(738.28px, 238px);
+      .context-wrap {
+        @include flexCenter(column, center, center);
+        @include contentSize(75px, 140px);
+        @include duoPadMar(0, 0);
+
+        .title {
+          @include fontSize(25px);
+          color: $white;
+        }
+      }
+
+      h6 {
+        @include flexCenter(row, flex-start, center);
+        @include contentSize(32.5px, 238px);
+        @include fontSize(20px);
+        @include duoPadMar(0, 0);
+      }
+
+      p {
+        @include flexCenter(row, flex-start, center);
+        @include contentSize(32.5px, 238px);
+        @include textAlign(center);
+        @include duoPadMar(0, 0);
+      }
+    }
+
+    .img-container {
+      img {
+        width: 500px;
+      }
+    }
+  }
+
+  .btm-content-wrap {
+    @include flexCenter(column, flex-start, center);
+    @include contentSize(738.28px, 738.28px);
+    @include duoPadMar(0, 0);
+
+    .horiz-rule {
+      border-top: 1px solid hsla(0, 0%, 78.4%, 0.4);
+    }
+
+    .context-wrap {
+      @include flexCenter(column, center, center);
+      @include contentSize(75px, 738.28px);
+      @include duoPadMar(0, 0);
+
+      .title {
+        @include fontSize(25px);
+        color: $white;
+      }
+    }
+
+    h6 {
+      @include flexCenter(row, flex-start, center);
+      @include contentSize(32.5px, 738.28px);
+      @include fontSize(20px);
+      @include duoPadMar(0, 0);
+    }
+
+    p {
+      @include flexCenter(row, unset, center);
+      @include contentSize(100px, 738.38px);
+      @include textAlign(flex-start);
+      @include duoPadMar(0, 0);
+    }
+  }
+}

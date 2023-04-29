@@ -20,7 +20,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route exact path="/gallery" component={Gallery} />
-          <Route path="/showroom" component={ShowRoom} />
+          <Route path="/showpage" component={ShowRoom} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           {/* <Route path="/dropdwn" component={Dropdwn} /> */}
