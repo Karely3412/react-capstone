@@ -1,0 +1,47 @@
+.main {
+  @include flexCenter(column, center, center);
+
+  .content-container {
+    .title {
+      @include flexCenter(column, center, center);
+      @include fontSize(50px);
+    }
+
+    .content-wrap {
+      h6 {
+        @include duoPadMar(0, 20px);
+        @include fontSize(20px);
+      }
+    }
+  }
+
+  .btm-content-container {
+    @include flexCenter(row, center, center);
+    @include contentSize(432px, 1182px);
+    @include duoPadMar(0, 100px);
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+
+    .content-wrap {
+      @include flexCenter(column, center, center);
+      @include contentSize(378px, 256px);
+      h2 {
+        @include flexCenter(column, center, center);
+        @include contentSize(36px, 182px);
+      }
+      p {
+        @include flexCenter(column, center, center);
+        @include contentSize(182px, 140px);
+        @include textAlign(center);
+      }
+      button {
+        @include contentSize(69px, 185px);
+        @include duoPadMar(0, 20px);
+        color: $white;
+        background-color: $orange;
+        border-radius: 50px;
+        border: none;
+      }
+    }
+  }
+}

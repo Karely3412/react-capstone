@@ -7,8 +7,8 @@
       .title-container {
         h6 {
           @include flexCenter(column, center, center);
-          @include fontSize(12px);
-          @include contentSize(13px, 156.15px);
+          @include fontSize(16px);
+          @include contentSize(31px, 191.15px);
           @include duoPadMar(0, 0);
         }
       }

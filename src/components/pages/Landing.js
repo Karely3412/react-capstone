@@ -40,7 +40,7 @@ function Landing() {
               </div>
 
               <img
-                src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                src="https://static.tvmaze.com/uploads/images/medium_portrait/213/534017.jpg"
                 alt="movie poster"
               />
             </div>
@@ -51,7 +51,7 @@ function Landing() {
               </div>
 
               <img
-                src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                src="https://static.tvmaze.com/uploads/images/medium_portrait/444/1111710.jpg"
                 alt="movie poster"
               />
             </div>
@@ -62,7 +62,7 @@ function Landing() {
               </div>
 
               <img
-                src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                src="	https://static.tvmaze.com/uploads/images/medium_portrait/0/647.jpg"
                 alt="movie poster"
               />
             </div>
@@ -73,7 +73,7 @@ function Landing() {
               </div>
 
               <img
-                src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                src="https://static.tvmaze.com/uploads/images/medium_portrait/81/204119.jpg"
                 alt="movie poster"
               />
             </div>
@@ -84,7 +84,7 @@ function Landing() {
               </div>
 
               <img
-                src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
+                src="https://static.tvmaze.com/uploads/images/medium_portrait/357/894990.jpg"
                 alt="movie poster"
               />
             </div>

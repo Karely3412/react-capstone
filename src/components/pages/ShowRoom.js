@@ -48,7 +48,7 @@ function ShowPage() {
         <div className="context-wrap">
           <h6 className="title">Extra Info</h6>
         </div>
-        <div className="horiz-rule"></div>
+
         <div className="context-wrapper">
           <h6>Summery:</h6>
           <p>
@@ -59,10 +59,9 @@ function ShowPage() {
             dome, where it came from and if and when it will go away.
           </p>
         </div>
-        <div className="context-wrap">
-          <h6>Type:</h6>
-          <p>Scripted</p>
-        </div>
+
+        <h6>Type:</h6>
+        <p>Scripted</p>
         <div className="context-wrap">
           <h6>Previous Episode:</h6>
           <p>https://api.tvmaze.com/episodes/185054</p>

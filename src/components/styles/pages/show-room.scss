@@ -11,6 +11,7 @@
       @include flexCenter(column, flex-start, center);
       @include duoPadMar(0, 0);
       @include contentSize(738.28px, 238px);
+
       .context-wrap {
         @include flexCenter(column, center, center);
         @include contentSize(75px, 140px);
@@ -34,6 +35,7 @@
         @include contentSize(32.5px, 238px);
         @include textAlign(center);
         @include duoPadMar(0, 0);
+        // flex-wrap: wrap;
       }
     }
 
@@ -48,10 +50,7 @@
     @include flexCenter(column, flex-start, center);
     @include contentSize(738.28px, 738.28px);
     @include duoPadMar(0, 0);
-
-    .horiz-rule {
-      border-top: 1px solid hsla(0, 0%, 78.4%, 0.4);
-    }
+    // flex-wrap: wrap;
 
     .context-wrap {
       @include flexCenter(column, center, center);
@@ -76,6 +75,7 @@
       @include contentSize(100px, 738.38px);
       @include textAlign(flex-start);
       @include duoPadMar(0, 0);
+      flex-wrap: wrap;
     }
   }
 }

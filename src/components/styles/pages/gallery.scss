@@ -1,10 +1,10 @@
 .main-gallery {
   @include flexCenter(column, center, center);
-
+  @include duoPadMar(20px, 0);
   .filter-container {
     @include flexCenter(row, flex-end, center);
     @include contentSize(28px, 80%);
-
+    @include duoPadMar(0, 20px);
     select {
       @include contentSize(28px, 110px);
       @include fontSize(18px);
@@ -17,9 +17,11 @@
   .content-card-wrapper {
     @include flexCenter(row, center, center);
     flex-wrap: wrap;
+
     .content-card {
       @include flexCenter(column, center, center);
-      @include contentSize(550px, 220px);
+      @include contentSize(600px, 220px);
+      border-bottom: 1px solid hsla(0, 0%, 78.4%, 0.4);
 
       .title-container {
         @include flexCenter(row, center, center);
@@ -29,10 +31,6 @@
           text-align: center;
         }
       }
-
-      // .img-wrap {
-      //   @include contentSize(295px, 210px);
-      // }
 
       .content-container {
         @include flexCenter(column, center, center);
@@ -72,9 +70,6 @@
             @include duoPadMar(0, 0);
           }
         }
-      }
-      .horiz-rule {
-        border-top: 1px solid hsla(0, 0%, 78.4%, 0.4);
       }
     }
   }

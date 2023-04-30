@@ -93,7 +93,6 @@ function Gallery() {
                   <p> {data.genres} </p>
                 </div>
               </div>
-              <div className="horiz-rule"></div>
             </div>
           );
         })}
