@@ -1,3 +1,11 @@
+/**
+ *
+ * on show click send the showid in the url
+ * getting the show id from the url that was sent from gallery page to showpage.
+ * Fetch(url) + the number of id "?"  from the url
+ *
+ */
+
 function ShowPage() {
   return (
     <div className="main-showpage">
@@ -80,7 +88,7 @@ function ShowPage() {
         <div className="context-wrap">
           <p>United States</p>
           <p>America/New_York</p>
-          <hr />
+
           <p>CBS</p>
           <p>Offical Site: https://www.cbs.com/</p>
         </div>

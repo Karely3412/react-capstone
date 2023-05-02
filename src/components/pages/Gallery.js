@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { NavLink } from "react-router-dom";
 
 function Gallery() {
   const [showData, setshowData] = useState([]);
@@ -76,7 +77,9 @@ function Gallery() {
               </div>
 
               <div className="img-wrap">
-                <img src={data.image.medium} alt="movie poster" />
+                <NavLink exact to={`/showpage?id=${data.id}`}>
+                  <img src={data.image.medium} alt="movie poster" />
+                </NavLink>
               </div>
 
               <div className="content-container">
