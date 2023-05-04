@@ -1,12 +1,26 @@
 /**
+ * PLAN -> TEST EVERY STEP OF PLAN -> REPEAT
+ * 1.- on show click send the showid in the url
+ *  DONE
+ * 2.- getting the show id from the url that was sent from gallery page to showpage.
  *
- * on show click send the showid in the url
- * getting the show id from the url that was sent from gallery page to showpage.
- * Fetch(url) + the number of id "?"  from the url
+ * 3.-Fetch(url) + the number of id "?"  from the url
  *
  */
 
+import axios from "axios";
+import { useState } from "react";
+import { useParams } from "react-router-dom";
+
 function ShowPage() {
+  // const [showData, setShowData] = useState
+  let { showid } = useParams();
+  console.log(showid);
+  // axios.get("https://api.tvmaze.com/shows/" + data.id)
+  //   .then((res) =>{
+
+  //   });
+
   return (
     <div className="main-showpage">
       <div className="content-container">

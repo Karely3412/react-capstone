@@ -3,29 +3,11 @@
   flex-direction: $flex-direc;
   justify-content: $just-cont;
   align-items: $align-items;
-  // flex-wrap: wrap;
 }
 
 @mixin contentSize($height, $width) {
   height: $height;
   width: $width;
-}
-
-@mixin borderTop($width, $style, $color) {
-  border-top: $width, $style, $color;
-}
-
-@mixin borderBottom($width, $style, $color) {
-  border-bottom: $width, $style, $color;
-}
-
-@mixin border($width, $style, $color) {
-  border: $width, $style, $color;
-}
-
-@mixin borderRadius($bord-rad) {
-  border-radius: $bord-rad;
-  border: none;
 }
 
 @mixin duoPadMar($padding, $margin) {
@@ -39,4 +21,21 @@
 
 @mixin textAlign($text-align) {
   text-align: $text-align;
+}
+
+// @mixin borderTop($width, $style, $color) {
+//   border-top: $width, $style, $color;
+// }
+
+// @mixin borderBottom($width, $style, $color) {
+//   border-bottom: $width, $style, $color;
+// }
+
+// @mixin border($width, $style, $color) {
+//   border: $width, $style, $color;
+// }
+
+@mixin borderRadius($bord-rad) {
+  border-radius: $bord-rad;
+  border: none;
 }

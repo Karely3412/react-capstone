@@ -77,7 +77,7 @@ function Gallery() {
               </div>
 
               <div className="img-wrap">
-                <NavLink exact to={`/showpage?id=${data.id}`}>
+                <NavLink exact to={`/showpage/${data.id}`}>
                   <img src={data.image.medium} alt="movie poster" />
                 </NavLink>
               </div>

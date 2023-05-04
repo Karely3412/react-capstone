@@ -10,6 +10,7 @@ import Landing from "./pages/Landing";
 import ShowRoom from "./pages/ShowRoom";
 import SideNav from "./navigation/SideNav";
 import Footer from "./navigation/Footer";
+import { text } from "@fortawesome/fontawesome-svg-core";
 // import Dropdwn from "./pages/Dropdwn";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route exact path="/gallery" component={Gallery} />
-          <Route path="/showpage" component={ShowRoom} />
+          <Route path="/showpage/:showid" component={ShowRoom} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           {/* <Route path="/dropdwn" component={Dropdwn} /> */}
