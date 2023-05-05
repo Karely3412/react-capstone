@@ -3,23 +3,39 @@
  * 1.- on show click send the showid in the url
  *  DONE
  * 2.- getting the show id from the url that was sent from gallery page to showpage.
- *
+ * DONE
  * 3.-Fetch(url) + the number of id "?"  from the url
+ * DONE
+ * 4.- Set show data to fetched info
+ *
+ * 5.- added show data to jsx
+ *
  *
  */
 
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 function ShowPage() {
-  // const [showData, setShowData] = useState
+  const [showData, setShowData] = useState({});
   let { showid } = useParams();
-  console.log(showid);
-  // axios.get("https://api.tvmaze.com/shows/" + data.id)
-  //   .then((res) =>{
 
-  //   });
+  // useEffect(() => {
+  //   first
+
+  //   return () => {
+  //     second
+  //   }
+  // }, [third])
+
+  useEffect(() => {
+    axios.get("https://api.tvmaze.com/shows/" + showid).then((res) => {
+      setShowData(res.data);
+
+      console.log(res.data);
+    });
+  }, [showid]);
 
   return (
     <div className="main-showpage">
