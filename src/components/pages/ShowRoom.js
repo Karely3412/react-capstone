@@ -7,7 +7,7 @@
  * 3.-Fetch(url) + the number of id "?"  from the url
  * DONE
  * 4.- Set show data to fetched info
- *
+ * DONE
  * 5.- added show data to jsx
  *
  *
@@ -32,8 +32,6 @@ function ShowPage() {
   useEffect(() => {
     axios.get("https://api.tvmaze.com/shows/" + showid).then((res) => {
       setShowData(res.data);
-
-      console.log(res.data);
     });
   }, [showid]);
 
@@ -42,44 +40,41 @@ function ShowPage() {
       <div className="content-container">
         <div className="context-container">
           <div className="context-wrap">
-            <h6 className="title">Name</h6>
+            <h6 className="title">{showData?.name}</h6>
           </div>
 
           <div className="context-wrap">
-            <h6>Rating stars:</h6>
-            <p>6.5</p>
+            <h6>Rating</h6>
+            <p>{showData?.rating?.average}</p>
           </div>
 
           <div className="context-wrap">
             <h6>Runtime:</h6>
-            <p>60 min</p>
+            <p>{showData?.runtime}</p>
           </div>
 
           <div className="context-wrap">
             <h6>Premiered:</h6>
-            <p>2013-06-24</p>
+            <p>{showData?.premiered}</p>
           </div>
 
           <div className="context-wrap">
             <h6>Schedule:</h6>
-            <p>Thursday</p>
+            <p>{showData?.schedule?.days}</p>
           </div>
 
           <div className="context-wrap">
             <h6>Time:</h6>
-            <p>22:00</p>
+            <p>{showData?.premiered?.time}</p>
           </div>
 
           <div className="context-wrap">
             <h6>Status:</h6>
-            <p>Ended</p>
+            <p>{showData?.status}</p>
           </div>
         </div>
         <div className="img-container">
-          <img
-            src="https://static.tvmaze.com/uploads/images/original_untouched/81/202627.jpg"
-            alt="movie-poster"
-          ></img>
+          <img src={showData?.image?.original} alt="movie poster" />
         </div>
       </div>
       <div className="btm-content-wrap">
@@ -89,38 +84,32 @@ function ShowPage() {
 
         <div className="context-wrapper">
           <h6>Summery:</h6>
-          <p>
-            Name is the story of a small town that is suddenly and inexplicably
-            sealed off from the rest of the world by an enormous transparent
-            dome. The town's inhabitants must deal with surviving the
-            post-apocalyptic conditions while searching for answers about the
-            dome, where it came from and if and when it will go away.
-          </p>
+          <p>{showData?.summary}</p>
         </div>
 
         <h6>Type:</h6>
-        <p>Scripted</p>
+        <p>{showData?.type}</p>
         <div className="context-wrap">
           <h6>Previous Episode:</h6>
-          <p>https://api.tvmaze.com/episodes/185054</p>
+          <p>{showData?.links?.previousepidsode}</p>
         </div>
         <div className="context-wrap">
           <h6>Current Episode:</h6>
-          <p>https://api.tvmaze.com/shows/1</p>
+          <p>{showData?.links?.self}</p>
         </div>
         <div className="context-wrap">
           <h6>Language:</h6>
-          <p>English</p>
+          <p>{showData?.language}</p>
         </div>
         <div className="context-wrap">
           <h6>Network:</h6>
         </div>
         <div className="context-wrap">
-          <p>United States</p>
-          <p>America/New_York</p>
+          <p>{showData?.network?.name}</p>
+          <p>{showData?.network?.country?.timezone}</p>
 
-          <p>CBS</p>
-          <p>Offical Site: https://www.cbs.com/</p>
+          <p>{showData?.network?.name}</p>
+          <p>{showData?.network?.officialSite}</p>
         </div>
       </div>
     </div>
